@@ -1,0 +1,169 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+  color: #194866;
+  padding: 30px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.header-heading {
+  margin-left: 2%;
+  margin-right: 30%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-small-heading {
+  font-size: 16px;
+}
+
+.header-button {
+  font-size: 16px;
+  padding: 12px 20px;
+  border: 2px solid black;
+  border-radius: 35px;
+  background-color: black;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #194866;
+  text-decoration: none;
+}
+.nav-button {
+  color: white;
+}
+
+.background-image {
+  background-image: url("assets/lms-bg-photo.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.course-card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.course-card a {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-form {
+  background-color: #1c5070;
+  height: 370px;
+}
+section h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: white;
+}
+section input {
+  display: block;
+  margin: 15px auto;
+  width: 50%;
+  padding: 10px;
+  color: white;
+  background-color: #1c5070;
+  border: none;
+  border-bottom: 1px solid black;
+}
+section textarea {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  padding: 10px;
+  height: 60px;
+  color: white;
+  background-color: #1c5070;
+  border: none;
+  border-bottom: 1px solid black;
+}
+::placeholder {
+  color: white;
+}
+
+section button {
+  margin-left: 35%;
+  color: #ffffff;
+  background-color: #194866;
+  border: none;
+  width: 30%;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+footer {
+  height: 100px;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background-color: #194866;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
