@@ -39,7 +39,6 @@ header {
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 15px;
 }
 
 nav li {
@@ -54,74 +53,58 @@ nav a {
 .nav-button {
   color: white;
 }
-.section-heading {
-  margin-top: 65px;
-  display: flex;
-  justify-content: center;
-  font-size: 38px;
-  margin-bottom: 30px;
-}
 
-main {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  max-width: 800px;
-  text-align: center;
-}
-
-.box {
+.contact {
+  width: 80%;
+  margin: 30px auto;
+  background-color: white;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
-.box img {
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.contact h2 {
+  margin-bottom: 10px;
 }
-.box h2 {
-  margin-bottom: 20px;
-}
-.box p {
+
+.contact p {
   margin-bottom: 20px;
 }
 
-.content {
-  display: flex;
-  margin-bottom: 30px;
+.contact form {
+  display: grid;
+  grid-gap: 10px;
 }
 
-.content .box {
-  width: 30%;
-  margin-left: 30px;
+.contact label {
+  font-weight: bold;
 }
 
-.content .section_content {
-  display: block;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
   padding: 10px 20px;
-  border-radius: 120px;
+  background-color: #194866;
+  color: white;
   border: none;
-  transition: background-color 0.3s;
-  width: 50%;
-  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.section_content:hover {
-  background-color: #0056b3;
-}
-
-.content .box .bx {
-  height: 100px;
-  width: 105px;
+.contact button:hover {
+  background-color: #0d334a;
 }
 footer {
   height: 100px;

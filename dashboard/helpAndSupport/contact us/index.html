@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="header-heading">LMS Title</li>
+                <li class="header-small-heading"><a href="">Home</a></li>
+                <li class="header-small-heading"><a href="#testimonials">Categories</a></li>
+                <li class="header-small-heading"><a href="#course">Course</a></li>
+                <li class="header-small-heading"><a href="#features">About Us</a></li>
+                <li class="header-small-heading"><a href="#contact">Contact</a></li>
+                <li><button class="header-button"><a href="login page/index.html" class="nav-button">Log in</a></button>
+                </li>
+                <li><button class="header-button"><a href="registration page/index.html" class="nav-button">Sign
+                            up</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions, please fill out the form below.</p>
+        <form action="submit_contact_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Learning Management System</p>
+    </footer>
+</body>
+
+</html>
