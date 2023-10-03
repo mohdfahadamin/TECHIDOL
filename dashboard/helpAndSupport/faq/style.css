@@ -54,71 +54,43 @@ nav a {
 .nav-button {
   color: white;
 }
-.section-heading {
-  margin-top: 65px;
+.headingh3 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 32px;
   display: flex;
   justify-content: center;
-  font-size: 38px;
-  margin-bottom: 30px;
 }
-
-.container {
-  max-width: 100%;
-  text-align: center;
+.heading-p {
+  font-size: 19px;
+  margin: 0 6%;
+  margin-bottom: 90px;
+  text-align: justify;
 }
-
+.faq-content {
+  width: 70%;
+  margin: 10px auto;
+}
 .box {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  /* margin: 10px auto; */
-  margin-left: 60px;
-}
-.box img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.box h2 {
-  margin-bottom: 20px;
-}
-.box p {
-  margin-bottom: 20px;
-}
-
-.content {
-  display: flex;
+  width: 88%;
+  margin: 10px auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  padding: 25px 35px;
+  border-radius: 20px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
-
-.content .box {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.h3-heading {
+  padding: 15px 15px;
+  margin-bottom: 5px;
+  font-size: 22px;
 }
-
-.content .section_content {
-  display: block;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 120px;
-  border: none;
-  transition: background-color 0.3s;
-  width: 50%;
-  text-align: center;
+.p-heading {
+  padding: 15px 15px;
+  text-align: justify;
+  font-size: 16px;
 }
-
-.section_content:hover {
-  background-color: #0056b3;
-}
-
-.content .box .bx {
-  height: 100px;
-  width: 105px;
-}
-
 footer {
   height: 100px;
   width: 100%;
