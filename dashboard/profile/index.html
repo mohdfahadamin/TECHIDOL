@@ -34,8 +34,8 @@
                     <span class="text">Courses</span>
                 </a>
             </li>
-            <li>
-                <a href="/dashboard/profile/index.html">
+            <li class="active">
+                <a href="#">
                     <i class='bx bxs-user-account'></i>
                     <span class="text">Profile</span>
                 </a>
@@ -52,7 +52,7 @@
                     <span class="text">Progress Tracking</span>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="/dashboard/discussing form/index.html">
                     <i class='bx bx-conversation'></i>
                     <span class="text">Discussing Forums</span>
@@ -109,100 +109,60 @@
         <!-- MAIN -->
         <main>
             <div class="container">
-                <div class="head">
-                    <h1>Drop your comments/ queries here<h1>
+                <div class="box">
+                    <img src="https://storage.prompt-hunt.workers.dev/clhtcvfj2001lle0ft49nh707_1" alt="">
+                    <ul>
+                        <li>Ayman Abdul Qadir</li>
+                        <li>18 Years </li>
+                        <li>Frontend Developer </li>
+                        <li><i style="font-size:24px" class="fa"></i>
+                            <i style="font-size:24px" class="fa"></i>
+                            <i style="font-size:24px" class="fa"></i>
+                        </li>
+                    </ul>
                 </div>
-                <div><span id="comment">0</span> Comments</div>
-                <div class="text">
-                    <p>We are happy to hear from you.</p>
+                <div class="About">
+                    <ul>
+                        <h1>profile </h1>
+                    </ul>
+                    <ul>
+                        <h3>Username </h3>
+                        <li>aymanabdul01</li>
+                    </ul>
+                    <ul>
+                        <h3>Gender</h3>
+                        <li>Male</li>
+                    </ul>
+                    <ul>
+                        <h3>Country</h3>
+                        <li>India</li>
+                    </ul>
+                    <ul>
+                        <h3>Bio</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of
+                            a page when
+                            looking at its
+                            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                            of letters,
+                            as opposed to using
+                            'Content here, content here', making it look like readable English. Many desktop
+                            publishing packages
+                            and web page
+                            editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                            will uncover
+                            many web sites
+                            still in their infancy. Various versions have evolved over the years, sometimes by
+                            accident,
+                            sometimes on purpose
+                            (injected humour and the like).</p>
+                    </ul>
+                    <ul>
+                        <h3>Contact</h3>
+                        <li>aymanabdulqadir31@gmail.com</li>
+                    </ul>
                 </div>
-                <div class="comments"></div>
-                <div class="commentbox">
-
-
-                    <img src="logo.png">
-
-                    <div class="content">
-                        <h2>Comment as: </h2>
-                        <b>Name : </b> <input type="text" placeholder="Enter your name here" class="user">
-
-
-                        <div class="commentinput">
-                            <input type="text" placeholder="Enter comment" class="usercomment">
-                            <div class="buttons">
-                                <button type="submit" disabled id="publish">Publish</button>
-                                <!-- <div class="notify">
-                                <input type="checkbox" class="notifyinput"> <span>Notify me</span> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </main>
-
-
-        <script>
-            const USERID = {
-                name: null,
-                identity: null,
-                image: null,
-                message: null,
-                date: null
-            }
-
-            const userComment = document.querySelector(".usercomment");
-            const publishBtn = document.querySelector("#publish");
-            const comments = document.querySelector(".comments");
-            const userName = document.querySelector(".user");
-            const notify = document.querySelector(".notifyinput");
-
-            userComment.addEventListener("input", e => {
-                if (!userComment.value) {
-                    publishBtn.setAttribute("disabled", "disabled");
-                    publishBtn.classList.remove("abled")
-                } else {
-                    publishBtn.removeAttribute("disabled");
-                    publishBtn.classList.add("abled")
-                }
-            })
-
-            function addPost() {
-                if (!userComment.value) return;
-                USERID.name = userName.value;
-                if (USERID.name === "Anonymous") {
-                    USERID.identity = false;
-                    USERID.image = "logo.png"
-                } else {
-                    USERID.identity = true;
-                    USERID.image = "logo.png"
-                }
-
-                USERID.message = userComment.value;
-                USERID.date = new Date().toLocaleString();
-                let published =
-                    `<div class="parents">
-             <img src="${USERID.image}">
-                <div>
-                    <h1>${USERID.name}</h1>
-                    <p>${USERID.message}</p>
-                    <div class="engagements"></div>
-                    <span class="date">${USERID.date}</span>
-                </div>    
-            </div>`
-
-                comments.innerHTML += published;
-                userComment.value = "";
-                publishBtn.classList.remove("abled")
-
-                let commentsNum = document.querySelectorAll(".parents").length;
-                document.getElementById("comment").textContent = commentsNum;
-
-            }
-
-            publishBtn.addEventListener("click", addPost);
-
-
-
-        </script>
         <!-- MAIN -->
     </section>
     <!-- CONTENT -->

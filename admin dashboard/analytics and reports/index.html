@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Admin panel</title>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-book'></i>
+            <span class="text">LMS</span>
+        </a>
+        <ul class="side-menu top">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-food-menu'></i>
+                    <span class="text">User Management</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user-account'></i>
+                    <span class="text">Course Management</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="#">
+                    <i class='bx bxs-layer'></i>
+                    <span class="text">Analytics and Reports</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin dashboard/content management/index.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="text">Content Management</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin dashboard/communication tools/index.html">
+                    <i class='bx bx-conversation'></i>
+                    <span class="text">Communication Tools</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-certification'></i>
+                    <span class="text">Enrollment and Registration</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="/admin dashboard/user support/index.html">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="text">User Support</a></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="assets/techidolpic.PNG">
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+
+            <section id="main-content">
+
+
+                <div class="clear"></div>
+
+                <!--Add Charts-->
+                <br><br><br><br>
+                <div class="graphbox">
+                    <div class="box">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="box">
+                        <canvas id="earning"></canvas>
+                    </div>
+                </div>
+                <selection>
+                    <div class="container">
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('top_full_stack.webp');"></div>
+                            <h2>Full-Strack</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Nesciunt, cum quo. Veniam
+                                dolores fugiat
+                                a? </p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('c++.webp');"></div>
+                            <h2>C Programming </h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('java.png');"></div>
+                            <h2>Java++</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('python.png');"></div>
+                            <h2>Pythons</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('hyd.jpeg.jpg')"></div>
+                            <h2>Hydronics</h2>;
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('ME\ CHANIC\ OF\ MATERIAL.jpg');">
+                            </div>
+                            <h2>Mechanics of Material</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('OIP.jpeg');"></div>
+                            <h2>Web Development</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+
+                        </div>
+                        <div class="content">
+                            <br>
+                            <div class="content-img" style="background-image: url('autocad-terbaru-2016.jpg');"></div>
+                            <h2>Auto CAD</h2>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, cum quo. Veniam
+                                dolores
+                                fugiat a?</p>
+                            <br>
+                            <button><a href="#">Paid</a></button>
+                        </div>
+                    </div>
+
+                </selection>
+
+                </div>
+                </div>
+                <hr>
+                <footer class="footer">
+                    <div class="content-form">
+                        <form action="#">
+                            <h1>Analytics & report</h1>
+                            &nbsp;&nbsp;
+                            <div class="box">
+                                <select name="Standards">
+                                    <option>select</option>
+                                    <option>Civil Engineering</option>
+                                    <option>C.S Engineering</option>
+                                    <option>IT Engineering</option>
+                                    <option>PHD High Level</option>
+                                </select>
+
+                                <select name="Courses">
+                                    <option>Courses</option>
+                                    <option>Web Development</option>
+                                    <option>Java</option>
+                                    <option>Python</option>
+                                    <option>C Programming</option>
+                                </select>
+                                <br>
+                                <a href="#"><button-1>Submit</button-1>
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="input-field">
+                                <label for=" F-Name">F-Name:-</label>
+                                &nbsp;&nbsp;
+                                <input type="text" placeholder="f-name">
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="input-field">
+                                <label for="first F-Name">S-Name:-</label>
+                                &nbsp;&nbsp;
+                                <input type="text" placeholder="S-name">
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="input-field">
+                                <label for="first F-Name">Email-id:-</label>
+                                &nbsp;&nbsp;
+                                <input type="text" placeholder="Enter mail-id">
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="input-field">
+                                <label for="first F-Name">Contact-no:-</label>
+                                <input type="text" placeholder="Contact-no">
+                            </div>
+                            &nbsp;&nbsp;
+                            <div class="input-field">
+
+                                <label>Gender:- </label>
+                                &nbsp;&nbsp;
+                                <input type="radio" name="gender" id="male">
+                                &nbsp;
+                                <span id="male">Male</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="gender" id="Female">
+                                <span id="Female">female</span>
+                                <br>
+                                <br>
+                                <p>All right reserred @copy-right development codingidol</p>
+
+                                <!--Add graphs-->
+
+                                <div class="graphbox">
+                                    <div class="box">
+                                        <h1>Fee Options</h1>
+                                        <br>
+                                        <hr>
+                                        <br>
+                                        <h>Hello, It's Me</h>
+                                        <br>
+                                        <h2>Sumaiya-@7__</h2>
+                                        <br>
+                                        <h>And I'm a Fronted</h>
+                                        <br><br>
+                                        <h style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Fuga
+                                            unde dolore dolores ut repellendus nisi quisquam quis rem magnam
+                                            ipsamdolores elits.
+                                        </h>
+                                        <br><br>
+                                        <h>Full Courses 100%</h>
+                                        <br>
+                                        <h2>UNLOCKING THE FULL POWER</h2>
+                                        <br>
+                                        <br>
+                                        <h2>@7-SUMMU......</h2>
+                                        <br><br>
+                                        <h>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+                                            libero.</h>
+                                        <br>
+                                        <br>
+                                        <hr>
+                                        <br><br>
+                                        <h>From</h>
+                                        <br>
+                                        <h>05:00pm</h>
+                                        <br>
+                                        <h>OCT|28|2023</h>
+                                        <br><br><br>
+                                        <button>Fee paid</button>
+                                        <br>
+
+                                        <canvas id="myChart"></canvas>
+
+                                    </div>
+                                    <div class="box">
+                                        <p>Total Courses</p>
+                                        <br>
+                                        <hr>
+                                        <h1>complete the courses </h1>
+                                        <br>
+                                        <div class="content-img" style="background-image: url('top_full_stack.webp');">
+                                        </div>
+                                        <h2>Full-Strack</h2>
+                                        <br>
+                                        <br>
+                                        <h>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odio nobis ad
+                                            tempora
+                                            cumque maiores quod eveniet maxime unde repellat quisquam temporare?</h>
+                                        <br><br>
+                                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.?</h1>
+                                        <br>
+                                        <h style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Fuga
+                                            unde dolore dolores ut repellendus nisi quisquam quis rem magnam ipsam.</h>
+                                        <br><br>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptates
+                                            ullam
+                                            maiores maxime quasi a ratione labore suscipit doloribus quibusdam?</p>
+                                        <br><br>
+                                        <h>I'm a Web Designer with extensive for over 3 years. Expertise is to create
+                                            and
+                                            website design, Fronted ,</h>
+                                        <br><br>
+                                        <button>Fee paid</button>
+                                        <br><br>
+                                        <canvas id="earning"></canvas>
+
+                                    </div>
+                                </div>
+                        </form>
+                        <p>All right reserred @copy-right development codingidol</p>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+                <script src="index.js"></script>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
